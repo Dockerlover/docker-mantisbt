@@ -13,7 +13,9 @@ Docker化MantisBT
         cd docker-mantisbt
         # 修改相应的参数
         docker build -t docker-mantisbt .
+        
 - 解压mantisbt代码
+
         cp -R 1.2/. app
         cd app
         tar zxvf mantisbt-release-1.2.19.tar.gz 
@@ -27,7 +29,9 @@ Docker化MantisBT
 - 配置mantisbt
 
 1. 访问http://localhost:8081
+
 2. 设置数据库并安装
+
 3. 修改config_inc.php(或者参考：http://www.cnblogs.com/yangxia-test/p/4459235.html)
 
         <?php
