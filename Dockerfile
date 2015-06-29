@@ -7,7 +7,7 @@ ENV USER_NAME admin
 ENV SERVICE_ID mantisbt
 # 复制代码
 COPY 1.2/. /tmp
-RUN tar zxvf mantisbt-release-1.2.19.tar.gz && mv . /app
+RUN tar zxvf /tmp/mantisbt-release-1.2.19.tar.gz && mv /tmp /app
 # 映射代码、日志目录等的数据卷
 VOLUME ["/app","/usr/local/apache2/logs","/etc/appche2"]
 # 默认暴露80端口
