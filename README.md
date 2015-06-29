@@ -28,7 +28,7 @@ Docker化MantisBT
 
 1. 访问http://localhost:8081
 2. 设置数据库并安装
-3. 修改config.inc
+3. 修改config_inc.php(或者参考：http://www.cnblogs.com/yangxia-test/p/4459235.html)
 
         <?php
         $g_hostname = 'localhost';
