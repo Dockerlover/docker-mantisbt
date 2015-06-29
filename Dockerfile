@@ -5,6 +5,9 @@ MAINTAINER  liuhong1.happy@163.com
 # 添加环境变量
 ENV USER_NAME admin
 ENV SERVICE_ID mantisbt
+# 复制代码
+COPY 1.2/mantisbt-release-1.2.19.tar.gz /tmp
+RUN tar zxvf /tmp/mantisbt-release-1.2.19.tar.gz /app
 # 映射代码、日志目录等的数据卷
 VOLUME ["/app","/usr/local/apache2/logs","/etc/appche2"]
 # 默认暴露80端口
