@@ -3,7 +3,7 @@ Docker化MantisBT
 
 ## 镜像特点
 
-- 2015/6/29 继承基础镜像docker-php
+- 2015/6/29 继承基础镜像docker-lamp
 
 ## 使用方法
 
